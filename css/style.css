@@ -7,9 +7,287 @@
 
 /* =============================================================================
 
-1. General styles (Buttons, Inputs, Typography)
+01.Loading
+02. General styles
+03. Site Header
+04. Media Queries
 
 ============================================================================= */
+
 /* =============================================================================
-1. General styles
+01. Loading
 ============================================================================= */
+
+/* =============================================================================
+02. General styles
+============================================================================= */
+html
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+body
+{
+    position: relative;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: #424242;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.6em;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+    /*
+    如果需要，内容将被剪裁以适合填充框。
+    不提供滚动条。
+    */
+    overflow-y: auto;
+    /*
+    取决于用户代理。
+    如果内容适合填充框内部，则它看起来与可见内容相同，但仍会建立新的块格式化上下文。
+    如果内容溢出，桌面浏览器会提供滚动条。
+    */
+    background-image: url(../img/main_bg.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+a
+{
+    color: #29B6F6;
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+a:hover
+{
+    color: #FF9800;
+    text-decoration: none;
+    outline: none;
+}
+a:focus
+{
+    outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    color: #212121;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+p
+{
+    font-size: 15px;
+    margin: 0 0 10px;
+    font-weight: 400;
+}
+p.lead
+{
+    font-size: 18px;
+    margin: 25px 0;
+}
+
+img
+{
+    vertical-align: bottom;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+
+.page
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.mobile-visible
+{
+    display: none;
+    visibility: hidden;
+}
+.mobile-hidden
+{
+    display: block;
+    visibility: visible;
+}
+/* Footer  Start */
+body > footer
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+    /* copyrights start */
+    body > footer .copyrights
+    {
+        display: block;
+        margin-bottom: 12px;
+        text-align: center;
+        font-size: 12px;
+        color: #9e9e9e;
+    }
+    /* copyrights end */
+  /*  Footer End */
+
+  /* =============================================================================
+03. Site Header
+============================================================================= */
+.header
+{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    z-index: 2;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.header *
+{
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.header .header-content
+{
+    max-width: 1032px;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 991px)
+{
+    .header.sticked
+    {
+        background-color: #fff;
+        height: 60px;
+        -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+        box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    }
+}
+ /*  Site Title Start */
+.site-title-block
+{
+    position: relative;
+    float: left;
+    z-index: 1;
+    text-align: center;
+}
+.site-title
+{
+    color: #49515d;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    line-height: 1;
+    margin: 38px 0 0;
+}
+.site-title span
+{
+    color: #29B6F6;
+}
+.header.sticked .site-title
+{
+    margin-top: 18px;
+}
+
+.site-main
+{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+   /*  Site Title End */
+/* =============================================================================
+04. Media Queries
+============================================================================= */
+@media only screen and (max-width: 1032px)
+{
+    .header .header-content
+    {
+        margin: 0 15px;
+    }
+}
+
+.header
+{
+    width: 100%;
+    max-width: 320px;
+    height: calc(100% - 50px);
+    right: 0;
+    top: 50px;
+    z-index: 1001;
+    overflow: auto;
+    background-color: #29B6F6;
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+    -webkit-transition: all 0.44s ease-in-out;
+    -moz-transition: all 0.44s ease-in-out;
+    -o-transition: all 0.44s ease-in-out;
+    -ms-transition: all 0.44s ease-in-out;
+    transition: all 0.44s ease-in-out;
+}
+.header *
+{
+    -webkit-transition: all 0.44s ease-in-out;
+    -moz-transition: all 0.44s ease-in-out;
+    -o-transition: all 0.44s ease-in-out;
+    -ms-transition: all 0.44s ease-in-out;
+    transition: all 0.44s ease-in-out;
+}
+
+.mobile-menu-hide
+{
+    width: 0;
+    right: 0;
+    margin-right: -100%;
+    overflow: hidden;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.mobile-menu-hide *
+{
+    visibility: hidden;
+    opacity: 0;
+}
+.mobile-header
+{
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #29B6F6;
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
