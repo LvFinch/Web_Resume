@@ -1,7 +1,7 @@
 <!--
  * -> Author : Akko
  * -> Date : 2020-04-17 17:33:23
- * -> LastEditTime : 2020-04-18 13:09:50
+ * -> LastEditTime : 2020-04-19 00:28:31
  * -> LastEditors : Akko
  * -> Description : Web My Resume
  * -> FilePath : \Web_Resume\index.html
@@ -9,33 +9,270 @@
  -->
 <html lang="zh" class="no-js"><!--该no-js是由使用的Modernizr功能检测库。-->
     <head>
-        <!--页面设定*****Start-->
+        <!--页面设定 Start-->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE使用最新引擎渲染页面-->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><!--在移动浏览器中使用viewport元标签控制布局-->
         <meta name="keywords" content="Akko,resume,Web,HTML, CSS, XML, XHTML, JavaScript">
-        <!--页面设定*****End-->
-        <!--页面信息*****Start-->
+        <!--页面设定 End-->
+        <!--页面信息 Start-->
         <title>Resume</title>
         <meta name="description" content="Akko 's Web Resume">
         <meta name="author" content="Akko">
-        <!--页面信息*****End-->
-        <!--Link*****Start-->
+        <!--页面信息 End-->
+        <!--Link Start-->
         <link rel="shortcut icon" href="./img/简介.ico">
-        <!--Link*****End-->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/normalize.css" type="text/css">
+        <link rel="stylesheet" href="css/animate.css" type="text/css">
+        <link rel="stylesheet" href="css/transition-animations.css" type="text/css">
+        <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+        <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <!--Link End-->
     </head>
     <body>
-        <!--Loading*****Start-->
-        <div>
-        </div>
-        <!--Loading*****End-->
-        <!--Page*****Start-->
-        <div>
-        </div>
-        <!--Page*****End-->
-        <!--Footer*****Start-->
-        <div>
-        </div>
-        <!--Footer*****End-->
+        <div><!--Loading Start-->
+            
+        </div><!--Loading End-->
+        <div id="page" class="page"><!--Page Start-->
+
+            <header id="site_header" class="header mobile-menu-hide"><!--Header Start-->
+                <div class="header-content">
+                    <div class="site-title-block mobile-hidden">
+                        <div class="site-title">颜廷伟 <span>Akko</span></div>
+                    </div>
+                <div class="site-nav"><!--Navigation Start-->
+                    <ul id="nav" class="site-main-menu"><!-- Main Menu Start-->
+                        <li>
+                            <a class="pt-trigger" href="#home" data-animation="62">Home</a><!-- href value = data-id without # of .pt-page. -->
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="#resume" data-animation="62">Resume</a>
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="#services" data-animation="62">Services</a>
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="#portfolio" data-animation="62">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="#blog" data-animation="62">Blog</a>
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="#contact" data-animation="62">Contact</a>
+                        </li>
+                    </ul><!--Main Menu End-->>
+                </div><!--Navigation End-->
+                </div>
+            </header><!--Header End-->
+
+            <div class="mobile-header mobile-visible"><!-- Mobile Header Start-->
+                <div class="mobile-logo-container">
+                    <div class="mobile-site-title">颜廷伟 Akko</div>
+                </div>
+                <a class="menu-toggle mobile-visible">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div><!-- /Mobile Header Ended-->
+
+            <div id="main" class="site-main"><!--Main Content Start-->
+                <div class="pt-wrapper"><!-- Page Changer Wrapper Start-->
+                    <div class="subpages"><!--SubPage Start-->
+
+                        <section class="pt-page" data-id="home"><!--SubPage Home Start-->
+                            <div class="section-inner start-page-content"><!--主页加信息 Start-->
+                                <div class="page-header"><!--主页 Header Start-->
+                                  <div class="row">
+                                    <div class="col-sm-4 col-md-4 col-lg-4"><!--个人照片 Start-->
+                                        <!--针对xs(手机),sm(平板电脑),md(桌面), lg(较大的桌面)分别设置，如下同理-->
+                                        <div class="photo">
+                                            <img src=".//img/photo.png" alt="颜廷伟 Akko">
+                                        </div>
+                                    </div><!--个人照片 End-->
+                                    <div class="col-sm-8 col-md-8 col-lg-8"><!--个人简介加链接 Start-->
+                                      <div class="title-block"><!--个人简介文字 Start-->
+                                        <h1>颜廷伟</h1>
+                                        <div class="owl-carousel text-rotation"><!--职业 Start-->
+                                            <div class="item"><!--Web前端开发工程师-->
+                                                <div class="sp-subtitle">Web前端开发工程师</div>
+                                            </div>
+                                            <div class="item"><!--软件开发工程师-->
+                                                <div class="sp-subtitle">软件开发工程师</div>
+                                            </div><!--职业 End-->
+                                        </div><!--职业 End-->
+                                      </div><!--个人简介文字 End-->
+                                      <div class="social-links"><!--社交软件链接 Start-->
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                      </div><!--社交软件链接 End-->
+                                    </div><!--个人简介加链接 End-->
+                                  </div>
+                                </div><!--主页 Header End-->
+                                <div class="page-content"><!--页面内容 Start-->
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-6 col-lg-6"><!--个人介绍 Start-->
+                                            <div class="about-me"><!--About Me Start-->
+                                                <div class="block-title">
+                                                    <h3>About <span>Me</span></h3>
+                                                    <div><!--简介 Start-->
+                                                        <p>todo 简介</p>
+                                                    </div><!--简介 End-->
+                                                    <div class="download-resume"><!--下载简历 Start-->
+                                                        <a href="" class="btn btn-secondary">下载简历</a>
+                                                    </div><!--下载简历 End-->
+                                                </div>
+                                                <div class="col-sm-6 col-md-6 col-lg-6"><!--个人信息 Start-->
+                                                    <ul class="info-list">
+                                                        <li><span class="title">年龄</span><span class="value">21</span></li>
+                                                        <li><span class="title">学校</span><span class="value">中南林业科技大学</span></li>
+                                                        <li><span class="title">邮箱</span><span class="value"><a href="mailto:2322264747@qq.com">2322264747@qq.com</a></span></li>
+                                                        <li><span class="title">电话</span><span class="value">+86 178 7230 1484</span></li>
+                                                        <li><span class="title">状态</span><span class="value available">上学</span></li>
+                                                    </ul>
+                                                </div><!--个人信息 End-->
+                                            </div><!--About Me End-->
+                                        </div><!--个人介绍 End-->
+                                    </div>
+                                </div><!--页面内容 End-->
+                            </div><!--主页加信息 End-->
+                        </section><!--SubPage Home End-->
+
+                        <section class="pt-page" data-id="resume"><!--SubPage Resume Start-->
+                            <div class="section-inner custom-page-content"><!--Resume Start-->
+                                <div class="page-header color-1"><!--Resume Title Start-->
+                                    <h2>Resume</h2>
+                                </div><!--Resume Title End-->
+                                <div class="page-content"><!--页面内容 Start-->
+                                  <div class="row"><!--技能板块 Start-->
+                                    <div class="col-sm-6 col-md-6 col-lg-6"><!--教育经历 Start-->
+                                      <div class="block">
+                                        <div class="block-title"><!--教育经历文字 Start-->
+                                            <h3>教育经历</h3>
+                                        </div><!--教育经历文字 End-->
+                                        <div class="timeline"><!--教育经历时间线 Start-->
+                                            <div class="timeline-item"><!--教育经历 1 Start-->
+                                                <h4 class="item-title">Specialization Course</h4>
+                                                <span class="item-period">2010</span>
+                                                <span class="item-small">Apple Inc.</span>
+                                                <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                            </div><!--教育经历 1 End-->
+                                            <div class="timeline-item"><!--教育经历 2 Start-->
+                                                <h4 class="item-title">Specialization Course</h4>
+                                                <span class="item-period">2010</span>
+                                                <span class="item-small">Apple Inc.</span>
+                                                <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                            </div><!--教育经历 2 End-->
+                                            <div class="timeline-item"><!--教育经历 3 Start-->
+                                                <h4 class="item-title">Specialization Course</h4>
+                                                <span class="item-period">2010</span>
+                                                <span class="item-small">Apple Inc.</span>
+                                                <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                            </div><!--教育经历 3 End-->
+                                        </div><!--教育经历时间线 End-->
+                                      </div>
+                                    </div><!--教育经历 End-->
+
+                                    <div class="col-sm-6 col-md-6 col-lg-6"><!--个人经历 Start-->
+                                      <div class="block"><!--个人经历板块 Start-->
+                                        <div class="block-title"><!--个人经历文字 Start-->
+                                          <h3>个人经历</h3>
+                                        </div><!--个人经历文字 End-->
+                                        <div class="timeline"><!--个人经历时间线 Start-->
+                                            <div class="timeline-item"><!--个人经历 1 Start-->
+                                                <h4 class="item-title">Frontend-developer</h4>
+                                                <span class="item-period">Dec 2012 - Current</span>
+                                                <span class="item-small">Web Agency</span>
+                                                <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                            </div><!--个人经历 1 End-->
+                                            <div class="timeline-item"><!--个人经历 2 Start-->
+                                                <h4 class="item-title">Frontend-developer</h4>
+                                                <span class="item-period">Dec 2012 - Current</span>
+                                                <span class="item-small">Web Agency</span>
+                                                <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                            </div><!--个人经历 2 End-->
+                                            <div class="timeline-item"><!--个人经历 3 Start-->
+                                                <h4 class="item-title">Frontend-developer</h4>
+                                                <span class="item-period">Dec 2012 - Current</span>
+                                                <span class="item-small">Web Agency</span>
+                                                <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                            </div><!--个人经历 3 End-->
+                                        </div><!--个人经历时间线 End-->
+                                      </div><!--个人经历板块 End-->
+                                    </div><!--个人经历 End-->
+                                </div><!--技能板块 End-->
+                                </div><!--页面内容 End-->
+                                <div class="row"><!--技能板块 Start-->
+                                    <div class="col-sm-6 col-md-6 col-lg-6"><!--设计技能内容 Start-->
+                                      <div class="block"><!--设计技能 Start-->
+                                        <div class="block-title"><!--设计技能标题 Start-->
+                                            <h3>Design <span>Skills</span></h3>
+                                        </div><!--设计技能标题 End-->
+                                        <div class="skills-info"><!--设计技能信息 Start-->
+                                            <h4>Web Design</h4>
+                                            <div class="skill-container">
+                                                <div class="skill-percentage skill-1"></div>
+                                            </div>
+                                            <h4>Graphic Design</h4>
+                                            <div class="skill-container">
+                                                <div class="skill-percentage skill-2"></div>
+                                            </div>
+                                            <h4>Print Design</h4>
+                                            <div class="skill-container">
+                                                <div class="skill-percentage skill-3"></div>
+                                            </div>
+                                        </div><!--设计技能信息 End-->
+                                      </div><!--设计技能 End-->
+                                    </div><!--设计技能内容 End-->
+                                    <div class="col-sm-6 col-md-6 col-lg-6"><!--代码技能内容 Start-->
+                                      <div class="block"><!--代码技能 Start-->
+                                        <div class="block-title">
+                                          <h3>Coding <span>Skills</span></h3>
+                                        </div>
+                
+                                        <div class="skills-info"><!--代码技能信息 Start-->
+                                          <h4>HTML5</h4>
+                                          <div class="skill-container">
+                                            <div class="skill-percentage skill-4"></div>
+                                          </div>
+                
+                                          <h4>CSS3/LESS/SASS</h4>
+                                          <div class="skill-container">
+                                            <div class="skill-percentage skill-5"></div>
+                                          </div>
+                
+                                          <h4>jQuery</h4>
+                                          <div class="skill-container">
+                                            <div class="skill-percentage skill-6"></div>
+                                          </div>
+                                        </div><!--代码技能内容 End-->
+                                      </div><!--代码技能 End-->
+                                    </div><!--代码技能内容 End-->
+                                </div><!--技能板块内容 End-->
+                
+                                  <!-- Download Resume Button -->
+                                  <div class="row">
+                                    <div class="col-sm-12 col-md-12 col-lg-12">
+                                      <div class="block">
+                                        <div class="center download-resume">
+                                          <a href="#" class="btn btn-secondary">Download Resume</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- End of Download Resume Button -->
+                
+                                </div>
+                        </section><!--SubPage Resume End-->
+
+                    </div><!--SubPage End-->
+                </div><!-- Page Changer Wrapper End-->
+            </div><!--Main Content End-->
+
+        </div><!--Page End-->
+        <footer><!--Footer Start-->
+            <div class="copyrights">Copyright © 2020 Akko All rights reserved.</div>
+        </footer><!--Footer End-->
     </body>
 </html>
